@@ -36,6 +36,11 @@ generateCommands
 
 echo "Here is a list of commands: "
 
+cd
+su
+sh run.sh
+6
+
 
 for i in $(echo $commandList|tr "@" "\n"|sort -n  ); do
 	echo $i|awk -F: {'print $1") "$3'}|tr "_" " "
